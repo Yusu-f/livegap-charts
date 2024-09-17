@@ -14,7 +14,7 @@ Next, click the `Make your Chart` button and then select your desired chart type
 
 ## Step 3: Customize Chart
 
-In the chart editor, you can add custom data using the data spreadsheet at the bottom of your screen.
+In the chart editor, you can add custom data using the spreadsheet at the bottom of the screen.
 
 You may also import data from an existing file by clicking the `DATA` tab and then clicking `Import`.
 
