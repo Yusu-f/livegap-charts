@@ -20,9 +20,9 @@ You may also import data from an existing file by clicking the `DATA` tab and th
 
 [image here]
 
-Use the navigiation bar to your right to fully customize the look and feel of your chart.
+Use the sidebar to your right to fully customize the look and feel of your chart.
 
 !!! tip
-    Swipe right on a mobile device to open the navigation bar.
+    Swipe left on a mobile device to open the sidebar.
 
 ## Install LiveGap Charts on your Device
