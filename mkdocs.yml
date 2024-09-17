@@ -1,0 +1,25 @@
+site_name: Livegap Charts Docs
+site_url: https://mydomain.org/mysite
+theme:
+  name: material
+  palette:
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: black
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+features:
+    - navigation.top            # "Back to top" button appears upon upward scrolling
+    - navigation.indexes        # Allow section headers to have a page (see tech/index.md)
+    - navigation.sections       # to show first level of sections expanded
+    - content.tabs.link
+    - search.suggest            # Search will display the likeliest completion for the last word
+    - search.highlight          # Highlight all occurrences after following the link
+    - content.code.copy         # Code blocks render a button to allow the user to copy a code
+    - content.action.edit       # Edit icon
+nav:
+  - Overview:
+    - index.md
+  - Getting started:
+    - getting-started.md
