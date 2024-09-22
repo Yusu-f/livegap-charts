@@ -18,14 +18,17 @@ features:
     - search.highlight          # Highlight all occurrences after following the link
     - content.code.copy         # Code blocks render a button to allow the user to copy a code
     - content.action.edit       # Edit icon
+    - navigation.sections
 nav:
   - Overview:
     - index.md
   - Getting started:
-    - getting-started.md
+    - getting-started/installing.md
+    - getting-started/getting-started.md
   - Charts:
     - charts/line-chart.md
-    - charts/customization.md
+    - charts/bar-chart.md
+    # - charts/customization.md
 
 markdown_extensions:
   - admonition

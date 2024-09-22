@@ -1,22 +1,27 @@
-# Line Chart
+# Bar Chart
 
-Line Charts are ideal for displaying trends over time or comparing multiple data sets.
+Bar charts are an effective tool for visually comparing different categories or values. They are particularly useful when you want to:
 
-Here's a detailed guide on how to create a line chart with LiveGap charts.
+* Show the distribution of data points: How often a particular category or value occurs.
+* Compare metric values across different groups: Identify differences in performance, quantity, or frequency between various categories.
+* Determine which groups are highest or most common: Easily spot the largest or most frequent categories.
+* Visualize how other groups compare against the others: Understand the relative differences between categories.
 
-## How to create and use a Line Chart
+Here's a detailed guide on how to create a bar chart with LiveGap charts.
 
-### Step 1: Create a Line Chart
+## How to create and use a Bar Chart
 
-To create a new Line Chart, click the `Make your Chart` button on the [LiveGap Charts Home screen](https://charts.livegap.com/) and then select `Line Chart` from the list of options presented.
+### Step 1: Create a Bar Chart
 
-This will open the Chart editor with the default line chart loaded.
+To create a new bar Chart, click the `Make your Chart` button on the [LiveGap Charts Home screen](https://charts.livegap.com/) and then select `Bar Chart` from the list of options presented.
 
-You can load a different line chart from the `Gallery` by clicking the `SELECT CHART` button under the `CHART` tab in the right sidebar.
+This will open the Chart editor with the default bar chart loaded.
+
+You can load a different bar chart from the `Gallery` by clicking the `SELECT CHART` button under the `CHART` tab in the right sidebar.
 
 ### Step 2: Add data to your chart
 
-Add your data to your line chart using the spreadsheet at the bottom of the screen.
+Add your data to your bar chart using the spreadsheet at the bottom of the screen.
 
 ![Customize Chart](../assets/images/add-data.png)
 
@@ -28,7 +33,7 @@ You may also import data from an existing spreadsheet (`.csv` file) by clicking 
 
 Customize your chart using the various customization options in the right sidebar.
 
-The [table](#customization-options) below describes what each option does.
+This [table](#customization-options) describes what each option does.
 
 <!-- !!! tip
     Swipe left on a mobile device to open the right sidebar. -->
