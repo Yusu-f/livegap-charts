@@ -8,7 +8,8 @@ theme:
       primary: black
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: default
+      primary: black
+      scheme: black
 features:
     - navigation.top            # "Back to top" button appears upon upward scrolling
     - navigation.indexes        # Allow section headers to have a page (see tech/index.md)
