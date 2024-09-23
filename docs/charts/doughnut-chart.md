@@ -1,6 +1,6 @@
 # Doughnut Chart
 
-Doughnut charts are similar to [pie charts](pie-area-chart), but they have a hole in the center. This creates a donut-like shape.
+Doughnut charts are similar to [pie charts](pie-area-chart.md), but they have a hole in the center. This creates a donut-like shape.
 
 Key features and uses of doughnut charts:
 

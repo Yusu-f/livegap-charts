@@ -1,7 +1,8 @@
-site_name: Livegap Charts Docs
-site_url: https://mydomain.org/mysite
+site_name: Livegap Charts Documentation
+site_url: https://charts.livegap.com/help
 theme:
   name: material
+  logo: assets/images/logo.jpeg
   palette:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
@@ -38,7 +39,7 @@ nav:
     - charts/polar-area-chart.md
     - charts/doughnut-chart.md
     - charts/graph-chart.md
-  - Frequently Asked Questions:
+  - FAQs:
     - faqs/faqs.md
 
 markdown_extensions:
