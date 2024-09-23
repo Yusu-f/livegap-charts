@@ -1,27 +1,26 @@
-# Bar Chart
+# Horizontal Bar Chart
 
-Bar charts are an effective tool for visually comparing different categories or values. They are instrumental when you want to:
+Horizontal bar charts are a variation of bar charts where the bars are oriented horizontally instead of vertically. This type of chart is often preferred when:
 
-* **Show the distribution of data points**: How often a particular category or value occurs.
-* **Compare metric values across different groups**: Identify differences in performance, quantity, or frequency between various categories.
-* **Determine which groups are highest or most common**: Easily spot the largest or most frequent categories.
-* **Visualize how other groups compare against the others**: Understand the relative differences between categories.
+Labels for categories are long or complex: Horizontal bars can make it easier to read and understand the labels.
+The chart is designed for a wide screen or display: Horizontal bars can better utilize the available space.
+The chart is intended to be printed in a landscape orientation: Horizontal bars can fit more information on a page.
 
-Here's a detailed guide on creating a bar chart with LiveGap charts.
+Here's a detailed guide on creating a horizontal bar chart with LiveGap charts.
 
-## How to create and use a Bar Chart
+## How to create and customize a horizontal Bar Chart
 
-### Step 1: Create a Bar Chart
+### Step 1: Create a Horizontal Bar Chart
 
-To create a new bar Chart, click the `Make your Chart` button on the [LiveGap Charts Home screen](https://charts.livegap.com/) and select `Bar Chart` from the list of options.
+To create a new horizontal bar Chart, click the `Make your Chart` button on the [LiveGap Charts Home screen](https://charts.livegap.com/) and select `Horizontal Bar Chart` from the list of options.
 
-This will open the Chart editor with the default bar chart loaded.
+This will open the Chart editor with the default horizontal bar chart loaded.
 
-You can load a different bar chart from the `Gallery` by clicking the `SELECT CHART` button under the `CHART` tab in the right sidebar.
+You can load a different horizontal bar chart from the `Gallery` by clicking the `SELECT CHART` button under the `CHART` tab in the right sidebar.
 
 ### Step 2: Add data to your chart
 
-Add your data to your bar chart using the spreadsheet at the bottom of the screen.
+Add your data to your horizontal bar chart using the spreadsheet at the bottom of the screen.
 
 ![Customize Chart](../assets/images/add-data.png)
 
@@ -68,7 +67,7 @@ If desired, export the data used to create the chart as a spreadsheet (`.csv` fi
 | **Height**         | Slider            | Adjusts the overall height of the chart.                                                                  |
 | **BackColor**      | Color Picker      | Changes the background color of the chart. Click the `+` button to add more colors.                                                                |
 | **Canvas**        | Button      | Opens additional options for adjusting the canvas (padding, margin, color, border, etc.).              |
-| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Border**         | Button + Toggle            | Toggles border around the chart and opens additional settings for customizing it.</span>                                        |
+| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Border**</span>         | Button + Toggle            | Toggles border around the chart and opens additional settings for customizing it.                                        |
 | &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Box Shadow**</span>      | Toggle            | Toggles a shadow effect around the chart and opens additional settings for customizing it.                                                    |
 | **Format**     | Section            | Opens settings for customizing how numbers are displayed on the chart.                                                    |
 

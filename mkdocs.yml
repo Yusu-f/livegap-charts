@@ -28,11 +28,20 @@ nav:
   - Charts:
     - charts/line-chart.md
     - charts/bar-chart.md
+    - charts/stacked-bar-chart.md
+    - charts/horizontal-bar-chart.md
+    - charts/horizontal-stacked-bar.md
+    - charts/bar-line-chart.md
+    - charts/radar-chart.md
+    - charts/pie-area-chart.md
+    - charts/polar-area-chart.md
+    - charts/doughnut-chart.md
+    - charts/graph-chart.md
     # - charts/customization.md
 
 markdown_extensions:
   - admonition
   - tables
 
-extra_javascript:
-  - scripts/collapse-rows.js
+extra_css:
+  - assets/stylesheets/styles.css

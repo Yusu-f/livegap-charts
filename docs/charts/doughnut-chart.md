@@ -1,27 +1,28 @@
-# Bar Chart
+# Doughnut Chart
 
-Bar charts are an effective tool for visually comparing different categories or values. They are instrumental when you want to:
+Doughnut charts are similar to [pie charts](pie-area-chart), but they have a hole in the center. This creates a donut-like shape.
 
-* **Show the distribution of data points**: How often a particular category or value occurs.
-* **Compare metric values across different groups**: Identify differences in performance, quantity, or frequency between various categories.
-* **Determine which groups are highest or most common**: Easily spot the largest or most frequent categories.
-* **Visualize how other groups compare against the others**: Understand the relative differences between categories.
+Key features and uses of doughnut charts:
 
-Here's a detailed guide on creating a bar chart with LiveGap charts.
+* **Visualize proportions**: Like pie charts, doughnut charts can show how different parts of a whole relate to each other.
+* **Compare categories**: They can be used to compare the relative sizes of different categories.
+* **Show percentages**: Doughnut charts can display the percentage of each category in relation to the total.
 
-## How to create and use a Bar Chart
+Here's a detailed guide on creating a Doughnut chart with LiveGap charts.
 
-### Step 1: Create a Bar Chart
+## How to create and customize a Doughnut Chart
 
-To create a new bar Chart, click the `Make your Chart` button on the [LiveGap Charts Home screen](https://charts.livegap.com/) and select `Bar Chart` from the list of options.
+### Step 1: Create a Doughnut Chart
 
-This will open the Chart editor with the default bar chart loaded.
+To create a new Doughnut Chart, click the `Make your Chart` button on the [LiveGap Charts Home screen](https://charts.livegap.com/) and select `Doughnut Chart` from the list of options.
 
-You can load a different bar chart from the `Gallery` by clicking the `SELECT CHART` button under the `CHART` tab in the right sidebar.
+This will open the Chart editor with the default Doughnut chart loaded.
+
+You can load a different Doughnut chart from the `Gallery` by clicking the `SELECT CHART` button under the `CHART` tab in the right sidebar.
 
 ### Step 2: Add data to your chart
 
-Add your data to your bar chart using the spreadsheet at the bottom of the screen.
+Add your data to your Doughnut chart using the spreadsheet at the bottom of the screen.
 
 ![Customize Chart](../assets/images/add-data.png)
 
@@ -66,23 +67,24 @@ If desired, export the data used to create the chart as a spreadsheet (`.csv` fi
 | **Link Type**      | Dropdown          | Determines how data points are connected (e.g., point-to-point, spline).                                  |
 | **Width**          | Slider            | Adjusts the overall width of the chart.                                                                   |
 | **Height**         | Slider            | Adjusts the overall height of the chart.                                                                  |
+| **Total Amplitude** | Input Field | Sets the total amplitude for the chart.             |
+| **Start Angle**   | Slider      | Adjusts the starting angle of the chart.             |
+| **Radius Scale**   | Slider      | Adjusts the radius of the chart.             |
 | **BackColor**      | Color Picker      | Changes the background color of the chart. Click the `+` button to add more colors.                                                                |
 | **Canvas**        | Button      | Opens additional options for adjusting the canvas (padding, margin, color, border, etc.).              |
-| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Border**         | Button + Toggle            | Toggles border around the chart and opens additional settings for customizing it.</span>                                        |
+| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Border**</span>         | Button + Toggle            | Toggles border around the chart and opens additional settings for customizing it.                                        |
 | &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Box Shadow**</span>      | Toggle            | Toggles a shadow effect around the chart and opens additional settings for customizing it.                                                    |
 | **Format**     | Section            | Opens settings for customizing how numbers are displayed on the chart.                                                    |
 
 ### Colors
 
-| **Option**         | **Type**      | **Function**                                              |
-|--------------------|---------------|-----------------------------------------------------------|
-| **Multi Colors**    | Checkbox      | Toggles the use of different colors for each bar in the chart.       |
-| **Fill**            | Section      | Settings to customize the bar fill appearance, allowing for tailored color and style options.                 |
-| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Fill style**    | Button        | Opens options to set the fill style for each set of bars (between color, gradient, and pattern).                |
+| **Option**         | **Type**          | **Function**                                                                                              |
+|--------------------|-------------------|----------------------------------------------------------------------------------------------------------|
+| **Fill**           | Toggle            | Enables or disables the filling of the area under the lines in the chart with color.                      |
+| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Fill style**    | Button        | Opens options to set the fill style for each line (between color, gradient, and pattern).                |
 | &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Color Picker**    | Button        | Opens a color picker to set the fill color.                |
 | &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Fill pattern**    | Dropdown        | Opens options to set the fill pattern type for each set of bars (only available when fill style is set to pattern)                 |
 | &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Style**           | Button        | Opens the color scheme selection window.                   |
-| **Stroke**          | Switch + section        | Enables or disables stroke (border) for the bars and opens settings to customize them          |
 
 ### In-Graph Data
 
@@ -104,15 +106,16 @@ If desired, export the data used to create the chart as a spreadsheet (`.csv` fi
 | **Font Style**         | Icons     | Options to change the font color or make the font bold or italic. Click the `+` button to add separate colors for each set of data points. |
 | **Font Size**          | Slider    | Adjusts the font size for in-graph text. |
 
-### Bar
+### Icons
 
-| **Option**         | **Type**  | **Function**                                                |
-|--------------------|-----------|-------------------------------------------------------------|
-| **Multi Colors**    | Checkbox  | Enables multi-color bars in the chart for different datasets. |
-| **Show Stroke**     | Checkbox + section  | Toggles the stroke (outline) for each bar and opens additional customization settings for them.                  |
-| **Border Radius**   | Slider    | Adjusts the corner radius of the bars, making them rounded or square. |
-| **Value Spacing**   | Slider    | Controls the spacing between values (bars) in the dataset.  |
-| **Dataset Spacing** | Slider    | Adjusts the spacing between different datasets (e.g., 2023 vs 2024). |
+| Option        | Type        | Function                                             |
+|---------------|-------------|------------------------------------------------------|
+| **Icon 1-7**  | Dropdown    | Selects different icons to display on the chart.     |
+| **Color**     | Color Picker| Sets the color of the icons.                         |
+| **Size**      | Slider      | Adjusts the size of the icons.                       |
+| **X Position**| Slider      | Changes the horizontal position of the icons.        |
+| **Y Position**| Slider      | Changes the vertical position of the icons.          |
+| **Rotate**    | Slider      | Rotates the icons.                                   |
 
 ### Legend
 
@@ -133,34 +136,30 @@ If desired, export the data used to create the chart as a spreadsheet (`.csv` fi
 | **Font Style**         | Icons     | Options to change the font color or make the font bold or italic. |
 | **Font Size**          | Slider    | Adjusts the font size for the legend. |
 
+### Segment
+
+| Option         | Type        | Function                                           |
+|----------------|-------------|----------------------------------------------------|
+| **Line Color** | Color Picker| Sets the color of the segment lines.               |
+| **Line Style** | Dropdown    | Selects the style of the segment lines (e.g., solid, dashed). |
+| **Line Width** | Slider      | Adjusts the width of the segment lines.            |
+
 ### Scale
 
 | Option            | Type        | Function                                                   |
 |-------------------|-------------|------------------------------------------------------------|
 | **Show Labels**   | Checkbox    | Toggles the visibility of labels on the scale.             |
 | **Label**         | Input Field | Sets the text for the scale labels.                        |
+| **Show Line**    | Checkbox | Toggles the visibility of the line                      |
 | **Line Color**    | Color Picker| Selects the color of the scale lines.                      |
 | **Line Width**    | Slider      | Adjusts the width of the scale lines.                      |
 | **Line Style**    | Dropdown    | Selects the style of the scale lines (e.g., solid, dashed).|
-| **Override**      | Button      | Allows manual adjustment of scale starting value, step, and width.                   |
+| **Override**      | Switch + Section      | Allows manual adjustment of scale starting value, step, and width.                   |
 | **Tick Size**     | Sliders     | Adjusts the size of ticks on the scale (Top, Bottom, Left, Right). |
 | **Font**               | Section   | Allows customization of the font settings for the scale. |
 | **Font Family**        | Dropdown  | Selects the font family. Default is 'Open Sans'. |
 | **Font Style**         | Icons     | Options to change the font color, or make the font bold or italic. |
 | **Font Size**          | Slider    | Adjusts the font size for the scale. |
-
-### Axis
-
-| Option            | Type        | Function                                                   |
-|-------------------|-------------|------------------------------------------------------------|
-| **X Axis**   | Section + Toggle     | Toggles the X-axis visibility and enables settings to customize it.             |
-| **Text Rotate**         | Slider | Rotates X-axis points labels.                        |
-| **Label**    | Toggle | Toggles X-axis label visibility.                      |
-| **Font**               | Section   | Allows customization of the font settings for the X-axis label. |
-| **Font Family**        | Dropdown  | Selects the font family. Default is 'Open Sans'. |
-| **Font Style**         | Icons     | Options to change the font color, or make the font bold or italic. |
-| **Font Size**          | Slider    | Adjusts the font size for the X-axis label. |
-| **Y Axis**    | Section      | Provides options to customize the Y-axis' label, position, and font.                      |
 
 ### Grid
 

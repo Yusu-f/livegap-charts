@@ -72,16 +72,21 @@ If desired, export the data used to create the chart as a spreadsheet (`.csv` fi
 | **Option**         | **Type**          | **Function**                                                                                              |
 |--------------------|-------------------|----------------------------------------------------------------------------------------------------------|
 | **Fill**           | Toggle            | Enables or disables the filling of the area under the lines in the chart with color.                      |
+| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Fill style**    | Button        | Opens options to set the fill style for each line (between color, gradient, and pattern).                |
+| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Color Picker**    | Button        | Opens a color picker to set the fill color.                |
+| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Fill pattern**    | Dropdown        | Opens options to set the fill pattern type for each set of bars (only available when fill style is set to pattern)                 |
+| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Style**           | Button        | Opens the color scheme selection window.                   |
 | **Stroke**         | Toggle            | Enables or disables the line that connects the data points on the chart.                                   |
-| **Colors**         | Color Picker      | Allows selection of colors for the lines on the chart.      |
-| **Line Style**     | Dropdown          | Provides options to select different styles for the line (e.g., solid, dashed).                           |
-| **Width**          | Slider            | Adjusts the thickness of the lines connecting the data points.                                             |
+| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Colors**         | Color Picker      | Allows selection of colors for the lines on the chart.      |
+| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Line Style**     | Dropdown          | Provides options to select different styles for the line (e.g., solid, dashed).                           |
+| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Width**          | Slider            | Adjusts the thickness of the lines connecting the data points.                                             |
 | **Points**         | Toggle            | Enables or disables the visibility of individual data points on the chart.                                 |
-| **Point Colors**   | Color Picker      | Allows selection of colors for the individual points on the chart.                                         |
-| **Radius**         | Slider            | Adjusts the size (radius) of the data points.                                                              |
+| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Point Colors**   | Color Picker      | Allows selection of colors for the individual points on the chart.                                         |
+| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Radius**         | Slider            | Adjusts the size (radius) of the data points.                                                              |
 | **Points Stroke**  | Toggle            | Enables or disables the stroke (border) around the individual data points.                                 |
-| **Stroke Style**   | Dropdown          | Provides options to select the style of the border around the data points (e.g., solid, dashed).           |
-| **Stroke Width**   | Slider            | Adjusts the thickness of the stroke (border) around the individual data points.                            |
+| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Stroke Colors**   | Color Picker      | Allows selection of colors for the individual lines on the chart.                                         |
+| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Stroke Style**   | Dropdown          | Provides options to select the style of the border around the data points (e.g., solid, dashed).           |
+| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Stroke Width**   | Slider            | Adjusts the thickness of the stroke (border) around the individual data points.                            |
 
 ### In-Graph
 
@@ -131,7 +136,7 @@ If desired, export the data used to create the chart as a spreadsheet (`.csv` fi
 | **Stroke**           | Checkbox                    | Toggles the visibility of the stroke around data points. |
 | **Stroke Style**     | Dropdown                    | Selects the style of the stroke (e.g., solid, dashed). |
 | **Stroke Width**     | Slider                      | Adjusts the width of the stroke around data points. |
-| **Bezier Curve**     | Checkbox + Slider                    | Toggles the use of a bezier curve for line smoothing. |
+| **Bezier Curve**     | Checkbox + Slider           | Toggles the use of a bezier curve for line smoothing. |
 
 ### Point Dot
 
@@ -148,12 +153,18 @@ If desired, export the data used to create the chart as a spreadsheet (`.csv` fi
 |-------------------|-------------|------------------------------------------------------------|
 | **Show Labels**   | Checkbox    | Toggles the visibility of labels on the scale.             |
 | **Label**         | Input Field | Sets the text for the scale labels.                        |
+| **Show Line**    | Checkbox | Toggles the visibility of the line                      |
 | **Line Color**    | Color Picker| Selects the color of the scale lines.                      |
 | **Line Width**    | Slider      | Adjusts the width of the scale lines.                      |
 | **Line Style**    | Dropdown    | Selects the style of the scale lines (e.g., solid, dashed).|
-| **X Scale Line**  | Toggle      | Toggles the visibility of the X scale line.                |
-| **Line Position** | Dropdown    | Sets the position of the line (e.g., Bottom).              |
-| **Override**      | Button      | Allows manual adjustment of scale starting value, step, and width.                   |
+| **X Scale Line**  | Switch + section      | Toggles the visibility of the X scale line and opens customization settings.                |
+| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Line Position** | Dropdown    | Sets the position of the line (e.g., Bottom).              |
+| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Line Color** | Color picker    | Sets the color.              |
+| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Line Width** | Slider    | Sets the width.              |
+| **Min**      | Slider / Input Field      | Sets the minimum value of the scale.                   |
+| **Max**      | Slider / Input Field      | Sets the maximum value of the scale.                   |
+| **Min Interval**      | Slider / Input Field      | Adjusts the minimum interval between scale marks.                   |
+| **Override**      | Switch + Section      | Allows manual adjustment of scale starting value, step, and width.                   |
 | **Tick Size**     | Sliders     | Adjusts the size of ticks on the scale (Top, Bottom, Left, Right). |
 | **Font**               | Section   | Allows customization of the font settings for the scale. |
 | **Font Family**        | Dropdown  | Selects the font family. Default is 'Open Sans'. |

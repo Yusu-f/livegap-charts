@@ -1,27 +1,28 @@
-# Bar Chart
+# Bar-Line Chart
 
-Bar charts are an effective tool for visually comparing different categories or values. They are instrumental when you want to:
+Bar-line charts combine bar charts and line charts into a single visualization. This type of chart is useful when you want to:
 
-* **Show the distribution of data points**: How often a particular category or value occurs.
-* **Compare metric values across different groups**: Identify differences in performance, quantity, or frequency between various categories.
-* **Determine which groups are highest or most common**: Easily spot the largest or most frequent categories.
-* **Visualize how other groups compare against the others**: Understand the relative differences between categories.
+Compare two or more data sets with different measurement scales: One data set can be represented by bars, while the other is represented by a line.
+Show the relationship between two data sets over time: The bars can represent values at specific points in time, while the line can show the trend or pattern of change.
+Visualize both categorical and numerical data: The bars can represent categorical data, while the line can represent numerical data.
 
-Here's a detailed guide on creating a bar chart with LiveGap charts.
+Here's a detailed guide on creating a bar-line chart with LiveGap charts.
 
-## How to create and use a Bar Chart
+## How to create and customize a bar-line Chart
 
-### Step 1: Create a Bar Chart
+### Step 1: Create a Bar-Line Chart
 
-To create a new bar Chart, click the `Make your Chart` button on the [LiveGap Charts Home screen](https://charts.livegap.com/) and select `Bar Chart` from the list of options.
+To create a new bar-line Chart, visit the [LiveGap charts web app](https://charts.livegap.com/v2/app.php) and click the `Chart` button in the sidebar to your right.
 
-This will open the Chart editor with the default bar chart loaded.
+In the dropdown that opens, click the `Chart Type` dropdown and select `Bar Line Chart`.
 
-You can load a different bar chart from the `Gallery` by clicking the `SELECT CHART` button under the `CHART` tab in the right sidebar.
+This will load the default bar-line chart.
+
+You can load a different bar-line chart from the `Gallery` by clicking the `SELECT CHART` button under the `CHART` tab in the right sidebar.
 
 ### Step 2: Add data to your chart
 
-Add your data to your bar chart using the spreadsheet at the bottom of the screen.
+Add your data to your bar-line chart using the spreadsheet at the bottom of the screen.
 
 ![Customize Chart](../assets/images/add-data.png)
 
@@ -68,21 +69,39 @@ If desired, export the data used to create the chart as a spreadsheet (`.csv` fi
 | **Height**         | Slider            | Adjusts the overall height of the chart.                                                                  |
 | **BackColor**      | Color Picker      | Changes the background color of the chart. Click the `+` button to add more colors.                                                                |
 | **Canvas**        | Button      | Opens additional options for adjusting the canvas (padding, margin, color, border, etc.).              |
-| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Border**         | Button + Toggle            | Toggles border around the chart and opens additional settings for customizing it.</span>                                        |
+| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Border**</span>         | Button + Toggle            | Toggles border around the chart and opens additional settings for customizing it.                                        |
 | &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Box Shadow**</span>      | Toggle            | Toggles a shadow effect around the chart and opens additional settings for customizing it.                                                    |
 | **Format**     | Section            | Opens settings for customizing how numbers are displayed on the chart.                                                    |
+
+### Bar Line
+
+| **Option**         | **Type**          | **Function**                                                                                              |
+|--------------------|-------------------|----------------------------------------------------------------------------------------------------------|
+| **Row 0**        | Dropdown            | Sets the chart type to display data on the first row of the data spreadsheet (bar or line).                                                    |
+| **Row 1**     | Dropdown          | Sets the chart type to display data on the second row of the data spreadsheet (bar or line).                                 |
 
 ### Colors
 
 | **Option**         | **Type**      | **Function**                                              |
 |--------------------|---------------|-----------------------------------------------------------|
 | **Multi Colors**    | Checkbox      | Toggles the use of different colors for each bar in the chart.       |
-| **Fill**            | Section      | Settings to customize the bar fill appearance, allowing for tailored color and style options.                 |
-| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Fill style**    | Button        | Opens options to set the fill style for each set of bars (between color, gradient, and pattern).                |
-| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Color Picker**    | Button        | Opens a color picker to set the fill color.                |
-| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Fill pattern**    | Dropdown        | Opens options to set the fill pattern type for each set of bars (only available when fill style is set to pattern)                 |
-| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Style**           | Button        | Opens the color scheme selection window.                   |
-| **Stroke**          | Switch + section        | Enables or disables stroke (border) for the bars and opens settings to customize them          |
+| **Fill**            | Section      | Settings to customize the bar and line fill appearance, allowing for tailored color and style options.                 |
+| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Fill style**    | Button        | Opens options to set the fill style for each set of bars and the line (between color, gradient, and pattern).                |
+| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Color Picker**</span>    | Button        | Opens a color picker to set the fill color.                |
+| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Fill pattern** </span>   | Dropdown        | Opens options to set the fill pattern type for each set of bars (only available when fill style is set to pattern)                 |
+| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Style**</span>           | Button        | Opens the color scheme selection window.                   |
+| **Bar Stroke**          | Switch + section        | Enables or disables stroke (border) for the bars and opens settings to customize them          |
+| **Line Stroke**         | Switch + section            | Enables or disables the line that connects the data points on the chart and opens customization opens                                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Colors**</span>         | Color Picker      | Allows selection of colors for the lines on the chart.      |
+| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Line Style**</span>     | Dropdown          | Provides options to select different styles for the line (e.g., solid, dashed).                           |
+| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Width**</span>          | Slider            | Adjusts the thickness of the lines connecting the data points.                                             |
+| **Points**         | Toggle            | Enables or disables the visibility of individual data points on the chart.                                 |
+| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Point Colors** </span>  | Color Picker      | Allows selection of colors for the individual points on the chart.                                         |
+| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Radius**</span>         | Slider            | Adjusts the size (radius) of the data points.                                                              |
+| **Points Stroke**  | Toggle            | Enables or disables the stroke (border) around the individual data points.                                 |
+| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Stroke Colors**   | Color Picker      | Allows selection of colors for the individual lines on the chart.                                         |
+| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Stroke Style**</span>   | Dropdown          | Provides options to select the style of the border around the data points (e.g., solid, dashed).           |
+| &nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap">**Stroke Width**</span>   | Slider            | Adjusts the thickness of the stroke (border) around the individual data points.                            |
 
 ### In-Graph Data
 
