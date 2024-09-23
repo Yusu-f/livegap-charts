@@ -37,7 +37,8 @@ nav:
     - charts/polar-area-chart.md
     - charts/doughnut-chart.md
     - charts/graph-chart.md
-    # - charts/customization.md
+  - Frequently Asked Questions:
+    - faqs/faqs.md
 
 markdown_extensions:
   - admonition
