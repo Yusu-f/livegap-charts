@@ -1,13 +1,13 @@
-# Graphs
+# Graphs (scatter plots)
 
-Graphs are line charts that can be used to understand and communicate information more effectively. They can help to identify trends, patterns, relationships, and comparisons between different data points.
+Scatter plots are used to visualize the relationship between two numerical variables. Each data point is represented by a dot on the chart, with the horizontal axis representing one variable and the vertical axis representing the other.
 
-Graphs are best used to:
+Scatter plots are best used to:
 
-* **Show trends over time**: Graphs are ideal for visualizing how data changes over a period.
-* **Compare multiple data sets**: You can plot multiple lines on the same chart to compare different variables or groups.
-* **Identify patterns and correlations**: Graphs can help you spot trends, seasonality, and relationships between different data points.
-* **Predict future values**: By analyzing historical trends, you can use Graphs to make predictions about future data points.
+* **Identify correlations**: Scatter plots can help you determine if there is a correlation between two variables. A positive correlation means that as one variable increases, the other also increases. A negative correlation means that as one variable increases, the other decreases. No correlation means that there is no relationship between the variables.
+* **Visualize trends**: Scatter plots can reveal trends or patterns in the data. For example, you might see a linear trend, a quadratic trend, or a clustering of data points.
+* **Compare variables**: Scatter plots can be used to compare different variables and see how they relate to each other.
+* **Predict values**: If there is a strong correlation between two variables, you can use one variable to predict the value of the other.
 
 Here's a detailed guide on how to create a Graph with LiveGap charts.
 

@@ -20,7 +20,6 @@ features:
     - search.highlight          # Highlight all occurrences after following the link
     - content.code.copy         # Code blocks render a button to allow the user to copy a code
     - content.action.edit       # Edit icon
-    - navigation.sections
 nav:
   - Overview:
     - index.md
@@ -39,8 +38,7 @@ nav:
     - charts/polar-area-chart.md
     - charts/doughnut-chart.md
     - charts/graph-chart.md
-  - FAQs:
-    - faqs/faqs.md
+  - faqs.md
 
 markdown_extensions:
   - admonition
