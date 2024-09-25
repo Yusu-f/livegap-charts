@@ -1,0 +1,1762 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://charts.livegap.com/help/charts/polar-area-chart/">
+      
+      
+        <link rel="prev" href="../pie-area-chart/">
+      
+      
+        <link rel="next" href="../doughnut-chart/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.36">
+    
+    
+      
+        <title>Polar Area Chart - Livegap Charts Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.06209087.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/styles.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#polar-area-chart" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Livegap Charts Documentation" class="md-header__button md-logo" aria-label="Livegap Charts Documentation" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.jpeg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Livegap Charts Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Polar Area Chart
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="black" data-md-color-primary="black" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Livegap Charts Documentation" class="md-nav__button md-logo" aria-label="Livegap Charts Documentation" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.jpeg" alt="logo">
+
+    </a>
+    Livegap Charts Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome to LiveGap Charts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/installing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Install LiveGap Charts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create your First Chart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Charts
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Charts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../line-chart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Line Chart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bar-chart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bar Chart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stacked-bar-chart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stacked Bar Chart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../horizontal-bar-chart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Horizontal Bar Chart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../horizontal-stacked-bar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Horizontal Stacked Bar Chart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bar-line-chart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bar-Line Chart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../radar-chart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Radar Chart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pie-area-chart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pie Chart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Polar Area Chart
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Polar Area Chart
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-create-and-customize-a-polar-area-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to create and customize a Polar Area Chart
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to create and customize a Polar Area Chart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-create-a-polar-area-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Create a Polar Area Chart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-add-data-to-your-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Add data to your chart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-customize-your-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Customize your Chart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-save-your-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Save your Chart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-export-data-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Export data (Optional)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customization-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customization Options
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Customization Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Colors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in-graph-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      In-Graph Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#legend" class="md-nav__link">
+    <span class="md-ellipsis">
+      Legend
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#segment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Segment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scale
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grid
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#annotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Annotations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Animation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#freehand" class="md-nav__link">
+    <span class="md-ellipsis">
+      Freehand
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../doughnut-chart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Doughnut Chart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../graph-chart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Graphs (scatter plots)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-create-and-customize-a-polar-area-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to create and customize a Polar Area Chart
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to create and customize a Polar Area Chart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-create-a-polar-area-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Create a Polar Area Chart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-add-data-to-your-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Add data to your chart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-customize-your-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Customize your Chart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-save-your-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Save your Chart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-export-data-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Export data (Optional)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customization-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customization Options
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Customization Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Colors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in-graph-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      In-Graph Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#legend" class="md-nav__link">
+    <span class="md-ellipsis">
+      Legend
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#segment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Segment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scale
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grid
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#annotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Annotations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Animation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#freehand" class="md-nav__link">
+    <span class="md-ellipsis">
+      Freehand
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="polar-area-chart">Polar Area Chart</h1>
+<p>Polar area charts are similar to radar charts but use a polar coordinate system instead of a Cartesian coordinate system. This means that the data points are plotted on a radial scale that extends outward from the center of the chart, with the angles representing different categories or criteria.</p>
+<p>Key features and uses of polar area charts:</p>
+<ul>
+<li><strong>Visualize cyclical or periodic data</strong>: Ideal for representing data that repeats over time or within a cycle (e.g., seasonal variations, daily patterns).</li>
+<li><strong>Compare multiple data sets with a common set of categories</strong>: Similar to radar charts, polar area charts can compare data sets based on multiple criteria.</li>
+<li><strong>Emphasize the overall shape or pattern of the data</strong>: The shape of the chart can reveal trends, similarities, and differences between data sets.</li>
+<li><strong>Highlight the relative importance of different categories</strong>: The area of each segment in the chart represents the magnitude of the data point, making it easy to compare the relative importance of different categories.</li>
+</ul>
+<p>Here's a detailed guide on creating a Polar Area chart with LiveGap charts.</p>
+<h2 id="how-to-create-and-customize-a-polar-area-chart">How to create and customize a Polar Area Chart</h2>
+<h3 id="step-1-create-a-polar-area-chart">Step 1: Create a Polar Area Chart</h3>
+<p>To create a new Polar Area Chart, click the <code>Make your Chart</code> button on the <a href="https://charts.livegap.com/">LiveGap Charts Home screen</a> and select <code>Polar Area Chart</code> from the list of options.</p>
+<p>This will open the Chart editor with the default Polar Area chart loaded.</p>
+<p>You can load a different Polar Area chart from the <code>Gallery</code> by clicking the <code>SELECT CHART</code> button under the <code>CHART</code> tab in the right sidebar.</p>
+<h3 id="step-2-add-data-to-your-chart">Step 2: Add data to your chart</h3>
+<p>Add your data to your Polar Area chart using the spreadsheet at the bottom of the screen.</p>
+<p><img alt="Customize Chart" src="../../assets/images/add-data.png" /></p>
+<p align="center"><em>Customize chart in editor</em></p>
+
+<p>You may also import data from an existing spreadsheet (<code>.csv</code> file) by clicking the <code>DATA</code> tab in the header and then click <code>Import</code>.</p>
+<h3 id="step-3-customize-your-chart">Step 3: Customize your Chart</h3>
+<p>Customize your chart using the various customization options in the right sidebar.</p>
+<p>This <a href="#customization-options">table</a> describes what each option does.</p>
+<!-- !!! tip
+    Swipe left on a mobile device to open the right sidebar. -->
+
+<h3 id="step-4-save-your-chart">Step 4: Save your Chart</h3>
+<p>First, edit your chart's title and subtitle by clicking <code>Chart Title</code> and <code>Add SubTitle Here</code> or by using the <code>Text</code> tab in the right sidebar.</p>
+<p>To save your chart locally to your device, click the download icon beneath your chart and choose your desired download option by clicking on one of the popup icons.</p>
+<p>You can choose to save your chart as an Image, Video, or in HTML.</p>
+<p>To save your chart online, click the <code>FILE</code> tab in the header and then click <code>Save Online</code> from the dropdown.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Click <code>My Charts</code> under the <code>VIEW</code> tab in the header to open a chart previously saved online.</p>
+</div>
+<h3 id="step-5-export-data-optional">Step 5: Export data (Optional)</h3>
+<p>If desired, export the data used to create the chart as a spreadsheet (<code>.csv</code> file) by clicking the <code>DATA</code> tab in the header and then click <code>Export</code>.</p>
+<h2 id="customization-options">Customization Options</h2>
+<h3 id="chart">Chart</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Option</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Function</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Gallery</strong></td>
+<td>Menu</td>
+<td>Opens the gallery, allowing you to select from a range of pre-made chart templates.</td>
+</tr>
+<tr>
+<td><strong>Chart Type</strong></td>
+<td>Dropdown</td>
+<td>Allows selection of the type of chart (e.g., Line Chart, Bar Chart, etc.).</td>
+</tr>
+<tr>
+<td><strong>Link Type</strong></td>
+<td>Dropdown</td>
+<td>Determines how data points are connected (e.g., point-to-point, spline).</td>
+</tr>
+<tr>
+<td><strong>Width</strong></td>
+<td>Slider</td>
+<td>Adjusts the overall width of the chart.</td>
+</tr>
+<tr>
+<td><strong>Height</strong></td>
+<td>Slider</td>
+<td>Adjusts the overall height of the chart.</td>
+</tr>
+<tr>
+<td><strong>Total Amplitude</strong></td>
+<td>Input Field</td>
+<td>Sets the total amplitude for the chart.</td>
+</tr>
+<tr>
+<td><strong>Start Angle</strong></td>
+<td>Slider</td>
+<td>Adjusts the starting angle of the chart.</td>
+</tr>
+<tr>
+<td><strong>BackColor</strong></td>
+<td>Color Picker</td>
+<td>Changes the background color of the chart. Click the <code>+</code> button to add more colors.</td>
+</tr>
+<tr>
+<td><strong>Canvas</strong></td>
+<td>Button</td>
+<td>Opens additional options for adjusting the canvas (padding, margin, color, border, etc.).</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap"><strong>Border</strong></span></td>
+<td>Button + Toggle</td>
+<td>Toggles border around the chart and opens additional settings for customizing it.</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap"><strong>Box Shadow</strong></span></td>
+<td>Toggle</td>
+<td>Toggles a shadow effect around the chart and opens additional settings for customizing it.</td>
+</tr>
+<tr>
+<td><strong>Format</strong></td>
+<td>Section</td>
+<td>Opens settings for customizing how numbers are displayed on the chart.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="colors">Colors</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Option</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Function</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fill</strong></td>
+<td>Toggle</td>
+<td>Enables or disables the filling of the area under the lines in the chart with color.</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap"><strong>Fill style</strong></td>
+<td>Button</td>
+<td>Opens options to set the fill style for each line (between color, gradient, and pattern).</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap"><strong>Color Picker</strong></td>
+<td>Button</td>
+<td>Opens a color picker to set the fill color.</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap"><strong>Fill pattern</strong></td>
+<td>Dropdown</td>
+<td>Opens options to set the fill pattern type for each set of bars (only available when fill style is set to pattern)</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap"><strong>Style</strong></td>
+<td>Button</td>
+<td>Opens the color scheme selection window.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="in-graph-data">In-Graph Data</h3>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>In-Graph Data</strong></td>
+<td>Switch + Button</td>
+<td>Toggle the display of in-graph data on or off and opens customization options.</td>
+</tr>
+<tr>
+<td><strong>Type</strong></td>
+<td>Dropdown</td>
+<td>Selects the type of data to display in-graph, such as value, percentage, or label</td>
+</tr>
+<tr>
+<td><strong>Position</strong></td>
+<td>Button + Section</td>
+<td>Opens configuration options for the position of in-graph data.</td>
+</tr>
+<tr>
+<td><strong>Padding X</strong></td>
+<td>Slider</td>
+<td>Adjusts horizontal padding of the in-graph text.</td>
+</tr>
+<tr>
+<td><strong>Padding Y</strong></td>
+<td>Slider</td>
+<td>Adjusts vertical padding of the in-graph text.</td>
+</tr>
+<tr>
+<td><strong>Align</strong></td>
+<td>Dropdown</td>
+<td>Sets horizontal alignment of the in-graph text. Options include left, center, and right.</td>
+</tr>
+<tr>
+<td><strong>VAlign</strong></td>
+<td>Dropdown</td>
+<td>Sets the vertical alignment of the in-graph text. Options include top, middle, and bottom.</td>
+</tr>
+<tr>
+<td><strong>Rotate</strong></td>
+<td>Slider</td>
+<td>Adjusts the rotation angle of the in-graph text.</td>
+</tr>
+<tr>
+<td><strong>BackgroundColor</strong></td>
+<td>Checkbox + Color pricker</td>
+<td>Enables a background color for the in-graph text.</td>
+</tr>
+<tr>
+<td><strong>Border</strong></td>
+<td>Checkbox + Color picker</td>
+<td>Enables a border around the in-graph text and enables you to change its color. Click the <code>+</code> button to add separate colors for each set of data points.</td>
+</tr>
+<tr>
+<td><strong>Padding</strong></td>
+<td>Slider</td>
+<td>Adjusts the padding of the in-graph text's bounding box.</td>
+</tr>
+<tr>
+<td><strong>Font</strong></td>
+<td>Button + Section</td>
+<td>Allows customization of the font settings for in-graph data.</td>
+</tr>
+<tr>
+<td><strong>Font Family</strong></td>
+<td>Dropdown</td>
+<td>Selects the font family. Default is 'Open Sans'.</td>
+</tr>
+<tr>
+<td><strong>Font Style</strong></td>
+<td>Icons</td>
+<td>Options to change the font color or make the font bold or italic. Click the <code>+</code> button to add separate colors for each set of data points.</td>
+</tr>
+<tr>
+<td><strong>Font Size</strong></td>
+<td>Slider</td>
+<td>Adjusts the font size for in-graph text.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="legend">Legend</h3>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Columns</strong></td>
+<td>Slider</td>
+<td>Adjusts the number of columns in the legend.</td>
+</tr>
+<tr>
+<td><strong>BlockSize</strong></td>
+<td>Slider</td>
+<td>Modifies the size of each block of text and icons in the legend.</td>
+</tr>
+<tr>
+<td><strong>Position</strong></td>
+<td>Section</td>
+<td>Controls the position of the legend on the chart. Options include <code>X Position</code> (Left, Center, Right) and <code>Y Position</code> (Top, Middle, Bottom).</td>
+</tr>
+<tr>
+<td><strong>Padding X</strong></td>
+<td>Slider</td>
+<td>Adjusts the horizontal padding around the legend.</td>
+</tr>
+<tr>
+<td><strong>Padding Y</strong></td>
+<td>Slider</td>
+<td>Adjusts the vertical padding around the legend.</td>
+</tr>
+<tr>
+<td><strong>Background Color</strong></td>
+<td>Color Picker</td>
+<td>Sets the background color for the legend.</td>
+</tr>
+<tr>
+<td><strong>Margin</strong></td>
+<td>Slider</td>
+<td>Adjusts the margin around the entire legend box.</td>
+</tr>
+<tr>
+<td><strong>Border</strong></td>
+<td>Multiple</td>
+<td>Lets you set a border around the Legend and change its color, line type, etc.</td>
+</tr>
+<tr>
+<td><strong>Padding</strong></td>
+<td>Slider</td>
+<td>Adjusts the padding inside the legend box.</td>
+</tr>
+<tr>
+<td><strong>Space</strong></td>
+<td>Multiple sliders</td>
+<td>Adjusts the legend's logo and text spacing.</td>
+</tr>
+<tr>
+<td><strong>Font</strong></td>
+<td>Section</td>
+<td>Allows customization of the font settings for the legend.</td>
+</tr>
+<tr>
+<td><strong>Font Family</strong></td>
+<td>Dropdown</td>
+<td>Selects the font family. Default is 'Open Sans'.</td>
+</tr>
+<tr>
+<td><strong>Font Style</strong></td>
+<td>Icons</td>
+<td>Options to change the font color or make the font bold or italic.</td>
+</tr>
+<tr>
+<td><strong>Font Size</strong></td>
+<td>Slider</td>
+<td>Adjusts the font size for the legend.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="segment">Segment</h3>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Line Color</strong></td>
+<td>Color Picker</td>
+<td>Sets the color of the segment lines.</td>
+</tr>
+<tr>
+<td><strong>Line Style</strong></td>
+<td>Dropdown</td>
+<td>Selects the style of the segment lines (e.g., solid, dashed).</td>
+</tr>
+<tr>
+<td><strong>Line Width</strong></td>
+<td>Slider</td>
+<td>Adjusts the width of the segment lines.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="scale">Scale</h3>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Show Labels</strong></td>
+<td>Checkbox</td>
+<td>Toggles the visibility of labels on the scale.</td>
+</tr>
+<tr>
+<td><strong>Label</strong></td>
+<td>Input Field</td>
+<td>Sets the text for the scale labels.</td>
+</tr>
+<tr>
+<td><strong>Show Line</strong></td>
+<td>Checkbox</td>
+<td>Toggles the visibility of the line</td>
+</tr>
+<tr>
+<td><strong>Line Color</strong></td>
+<td>Color Picker</td>
+<td>Selects the color of the scale lines.</td>
+</tr>
+<tr>
+<td><strong>Line Width</strong></td>
+<td>Slider</td>
+<td>Adjusts the width of the scale lines.</td>
+</tr>
+<tr>
+<td><strong>Line Style</strong></td>
+<td>Dropdown</td>
+<td>Selects the style of the scale lines (e.g., solid, dashed).</td>
+</tr>
+<tr>
+<td><strong>Override</strong></td>
+<td>Switch + Section</td>
+<td>Allows manual adjustment of scale starting value, step, and width.</td>
+</tr>
+<tr>
+<td><strong>Tick Size</strong></td>
+<td>Sliders</td>
+<td>Adjusts the size of ticks on the scale (Top, Bottom, Left, Right).</td>
+</tr>
+<tr>
+<td><strong>Font</strong></td>
+<td>Section</td>
+<td>Allows customization of the font settings for the scale.</td>
+</tr>
+<tr>
+<td><strong>Font Family</strong></td>
+<td>Dropdown</td>
+<td>Selects the font family. Default is 'Open Sans'.</td>
+</tr>
+<tr>
+<td><strong>Font Style</strong></td>
+<td>Icons</td>
+<td>Options to change the font color, or make the font bold or italic.</td>
+</tr>
+<tr>
+<td><strong>Font Size</strong></td>
+<td>Slider</td>
+<td>Adjusts the font size for the scale.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="grid">Grid</h3>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Line Color</strong></td>
+<td>Color Picker</td>
+<td>Selects the color of the grid lines.</td>
+</tr>
+<tr>
+<td><strong>Overlay</strong></td>
+<td>Checkbox</td>
+<td>Toggles the overlay of grid lines on the chart.</td>
+</tr>
+<tr>
+<td><strong>Line Style</strong></td>
+<td>Dropdown</td>
+<td>Selects the style of the grid lines (e.g., solid, dashed).</td>
+</tr>
+<tr>
+<td><strong>Line Width</strong></td>
+<td>Slider</td>
+<td>Adjusts the width of the grid lines.</td>
+</tr>
+<tr>
+<td><strong>X Lines Step</strong></td>
+<td>Slider</td>
+<td>Adjusts the spacing between vertical grid lines.</td>
+</tr>
+<tr>
+<td><strong>Y Lines Step</strong></td>
+<td>Slider</td>
+<td>Adjusts the spacing between horizontal grid lines.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="text">Text</h3>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Title</strong></td>
+<td>Section</td>
+<td>Options to customize the chart's title's text, color, fonts, etc.</td>
+</tr>
+<tr>
+<td><strong>SubTitle</strong></td>
+<td>Section</td>
+<td>Options to customize the chart's subtitle's text, color, fonts, etc.</td>
+</tr>
+<tr>
+<td><strong>Footnote</strong></td>
+<td>Section</td>
+<td>Options to customize the chart's footnote's text, color, fonts, etc.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="annotations">Annotations</h3>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Annotations</strong></td>
+<td>Toggle</td>
+<td>Toggles the display of data annotations on the chart when hovering over points with the mouse.</td>
+</tr>
+<tr>
+<td><strong>Value</strong></td>
+<td>Dropdown</td>
+<td>Selects the data value to annotate on the chart (percentage, label, or value).</td>
+</tr>
+<tr>
+<td><strong>BackColor</strong></td>
+<td>Color Picker</td>
+<td>Sets the background color for the annotation.</td>
+</tr>
+<tr>
+<td><strong>Padding</strong></td>
+<td>Sliders</td>
+<td>Adjusts the padding around the annotation (Top, Left, Right, Bottom).</td>
+</tr>
+<tr>
+<td><strong>Border</strong></td>
+<td>Button + Toggle</td>
+<td>Configures the border settings for the annotation.</td>
+</tr>
+<tr>
+<td><strong>Font</strong></td>
+<td>Button</td>
+<td>Opens font customization options for the annotation text.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="animation">Animation</h3>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Steps</strong></td>
+<td>Slider</td>
+<td>Adjusts the number of steps in the animation.</td>
+</tr>
+<tr>
+<td><strong>Easing</strong></td>
+<td>Dropdown</td>
+<td>Selects the easing function for the animation (e.g., Linear).</td>
+</tr>
+<tr>
+<td><strong>In &amp; Out</strong></td>
+<td>Dropdown</td>
+<td>Chooses the animation direction (In, Out).</td>
+</tr>
+<tr>
+<td><strong>By Dataset</strong></td>
+<td>Checkbox</td>
+<td>Animates the chart according to the dataset.</td>
+</tr>
+<tr>
+<td><strong>Left To Right</strong></td>
+<td>Checkbox</td>
+<td>Animates the chart from left to right.</td>
+</tr>
+<tr>
+<td><strong>Animate</strong></td>
+<td>Button</td>
+<td>Starts the animation.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="freehand">Freehand</h3>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Stroke Roughness</strong></td>
+<td>Slider</td>
+<td>Adjusts the roughness of the stroke lines.</td>
+</tr>
+<tr>
+<td><strong>Stroke Bowing</strong></td>
+<td>Slider</td>
+<td>Controls the bowing effect of the stroke lines.</td>
+</tr>
+<tr>
+<td><strong>Fill Style</strong></td>
+<td>Dropdown</td>
+<td>Selects the fill style for the chart elements (e.g., Hachure).</td>
+</tr>
+<tr>
+<td><strong>Fill Weight</strong></td>
+<td>Slider</td>
+<td>Adjusts the weight of the fill lines.</td>
+</tr>
+<tr>
+<td><strong>Fill Roughness</strong></td>
+<td>Slider</td>
+<td>Controls the roughness of the fill.</td>
+</tr>
+<tr>
+<td><strong>Fill Bowing</strong></td>
+<td>Slider</td>
+<td>Adjusts the bowing of the fill lines.</td>
+</tr>
+<tr>
+<td><strong>Hachure Angle</strong></td>
+<td>Dropdown</td>
+<td>Sets the angle of the hachure lines.</td>
+</tr>
+<tr>
+<td><strong>Hachure Gap</strong></td>
+<td>Slider</td>
+<td>Adjusts the gap between hachure lines.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+    
+  </body>
+</html>
